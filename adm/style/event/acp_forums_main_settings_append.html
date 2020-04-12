@@ -1,0 +1,21 @@
+{% INCLUDECSS '@sylver35_forumimg/forumimg.css' %}
+<dl id="dl_image_forum">
+	<dt>
+		<label for="list_images">{{ lang('SELECT_FORUM_IMAGE') }}{{ lang('COLON') }}</label><br />
+		{{ lang('SELECT_FORUM_IMAGE_EXPLAIN') }}<br /><br />
+		<fieldset class="submit-buttons">
+			<input onclick="selectImage(false)" class="button1" type="button" id="delete" name="delete" value="{{ lang('DELETE_BUTTON') }}" title="{{ lang('DELETE_BUTTON') }}" />
+		</fieldset>
+	</dt>
+	<dd class="imgcontainer" id="list_images">
+		{% if images|length %}
+		{% for image in images %}
+			<a onclick="selectImage('{{ image.IMAGE_SRC }}'); return false;">
+				<img src='{{ ROOT_PATH }}{{ FORUM_IMAGE_PATH }}{{ image.IMAGE_SRC }}' alt="{{ image.IMAGE_SRC }}" title="{{ image.IMAGE_SRC }}" height="25" />
+			</a>
+		{% endfor %}
+		{% else %}
+			{{ lang('EMPTY_FORUM_IMAGE') }}
+		{% endif %}
+	</dd>
+</dl>

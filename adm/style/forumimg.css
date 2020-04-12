@@ -1,0 +1,10 @@
+.imgcontainer {
+	max-height: 100px;
+	overflow-y: auto;
+	border: none; 
+	padding: 5px;
+}
+
+.imgcontainer img {
+	cursor: pointer;
+}

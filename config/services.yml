@@ -1,0 +1,10 @@
+services:
+    sylver35.forumimg.listener:
+        class: sylver35\forumimg\event\listener
+        arguments:
+            - '@template'
+            - '@config'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+        tags:
+            - { name: event.listener }

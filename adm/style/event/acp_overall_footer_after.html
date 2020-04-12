@@ -1,0 +1,18 @@
+{% if S_FORUM_IMAGE %}
+<script>
+$(document).ready(function(){
+	$('dd img:first').attr('id', 'image_forum');
+	$('#image_forum').closest('dl').attr('id', 'dl_forum_image');
+	$('#dl_forum_image').after($('#dl_image_forum'));
+});
+function selectImage(data){
+	if(!data){
+		$('#forum_image').val('');
+		$('#image_forum').hide();
+	}else{
+		$('#forum_image').val('{{ FORUM_IMAGE_PATH }}'+data);
+		$('#image_forum').attr({'src':'{{ ROOT_PATH }}{{ FORUM_IMAGE_PATH }}'+data, 'alt':data, 'title':data}).show();
+	}
+}
+</script>
+{% endif %}
