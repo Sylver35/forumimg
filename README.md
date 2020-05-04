@@ -4,7 +4,6 @@
 [![Build Status](https://scrutinizer-ci.com/g/Sylver35/forumimg/badges/build.png?b=1.0.0)](https://scrutinizer-ci.com/g/Sylver35/forumimg/build-status/1.0.0)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/Sylver35/forumimg/badges/code-intelligence.svg?b=1.0.0)](https://scrutinizer-ci.com/code-intelligence)
 
-
 ## Install (en)
 1. Download the latest release.
 2. Unzip the downloaded release, and change the name of the folder to `forumimg`.
