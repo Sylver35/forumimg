@@ -8,7 +8,6 @@
 */
 
 namespace sylver35\forumimg\event;
-
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use phpbb\template\template;
 use phpbb\config\config;
@@ -28,14 +27,14 @@ class listener implements EventSubscriberInterface
 	protected $php_ext;
 
 	/**
-	* Constructor
-	*/
+	 * Constructor
+	 */
 	public function __construct(template $template, config $config, $root_path, $php_ext)
 	{
-		$this->template		= $template;
-		$this->config		= $config;
-		$this->root_path	= $root_path;
-		$this->php_ext		= $php_ext;
+		$this->template = $template;
+		$this->config = $config;
+		$this->root_path = $root_path;
+		$this->php_ext = $php_ext;
 	}
 
 	static public function getSubscribedEvents()
