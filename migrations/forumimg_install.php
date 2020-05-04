@@ -8,7 +8,6 @@
 */
 
 namespace sylver35\forumimg\migrations;
-
 use phpbb\db\migration\migration;
 
 class forumimg_install extends migration
@@ -39,8 +38,8 @@ class forumimg_install extends migration
 
 		if (!is_dir($this->phpbb_root_path . $dir))
 		{
-			@mkdir($this->phpbb_root_path . $dir, 0755);
-			@chmod($this->phpbb_root_path . $dir, 0755);
+			mkdir($this->phpbb_root_path . $dir, 0755);
+			chmod($this->phpbb_root_path . $dir, 0755);
 		}
 	}
 }

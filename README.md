@@ -1,5 +1,9 @@
 # phpBB Breizh Forum Images Extension
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Sylver35/forumimg/badges/quality-score.png?b=1.0.0)](https://scrutinizer-ci.com/g/Sylver35/forumimg/?branch=1.0.0)
+[![Build Status](https://scrutinizer-ci.com/g/Sylver35/forumimg/badges/build.png?b=1.0.0)](https://scrutinizer-ci.com/g/Sylver35/forumimg/build-status/1.0.0)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/Sylver35/forumimg/badges/code-intelligence.svg?b=1.0.0)](https://scrutinizer-ci.com/code-intelligence)
+
 
 ## Install (en)
 1. Download the latest release.
